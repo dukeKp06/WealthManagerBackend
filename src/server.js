@@ -35,7 +35,8 @@ app.use((err, req, res, next) => {
 
 // Boot
 async function start() {
-  const datasetPath = path.resolve(__dirname, '../../Sample Portfolio Dataset for Assignment.xlsx')
+  // Excel file is now placed in the backend folder root
+  const datasetPath = path.resolve(__dirname, '../Sample Portfolio Dataset for Assignment.xlsx')
   await loadSampleData(datasetPath)
 
   app.listen(PORT, () => {
