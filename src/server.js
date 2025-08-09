@@ -22,10 +22,10 @@ app.use(express.json())
 app.get('/api/health', (req, res) => res.json({ ok: true }))
 
 // API routes
-app.use('/api/holdings', holdingsRouter)
-app.use('/api/allocation', allocationRouter)
-app.use('/api/performance', performanceRouter)
-app.use('/api/summary', summaryRouter)
+app.use('/api/portfolio/holdings', holdingsRouter)
+app.use('/api/portfolio/allocation', allocationRouter)
+app.use('/api/portfolio/performance', performanceRouter)
+app.use('/api/portfolio/summary', summaryRouter)
 
 // Global error handler
 app.use((err, req, res, next) => {
