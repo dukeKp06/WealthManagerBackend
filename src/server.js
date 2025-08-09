@@ -13,7 +13,7 @@ const __dirname = path.dirname(__filename)
 
 const app = express()
 const PORT = process.env.PORT || 4000
-const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'https://wealthmanagerbackend-dghr.onrender.com/'
+const FRONTEND_ORIGIN = process.env.FRONTEND_ORIGIN || 'https://wealthmanagerfrontend-1.onrender.com'
 
 app.use(cors({ origin: FRONTEND_ORIGIN }))
 app.use(express.json())
